@@ -2,4 +2,4 @@
 
 By Philip Browne
 
-Exploring Basics of Python Syntax for Springboard SEC Bootcamp
+Exploring Basics of Python Syntax for Springboard SEC Bootcamp# Python-Intro-Syntax-Exercise
