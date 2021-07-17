@@ -17,6 +17,20 @@ def convert_temp(unit_in, unit_out, temp):
 
     # YOUR CODE HERE
 
+    if unit_in == 'c' and unit_out == 'f':
+        return temp * 1.8 + 32
+    elif unit_in =='f' and unit_out == 'c':
+        return (temp-32)*(5/9)
+    elif (unit_in =='f' and unit_out =='f') or (unit_in =='c' and unit_out =='c'):
+        return temp
+    elif (unit_out != 'f' or unit_out != 'c') and (unit_in != 'f' or unit_in != 'c'):
+        return f'Invalid unit [{unit_in}] and [{unit_out}]'
+    elif (unit_in != 'f' or unit_in != 'c'):
+        return f'Invalid unit [{unit_in}]'
+    elif (unit_out != 'f' or unit_out != 'c'):
+        return f'Invalid unit [{unit_out}]'
+  
+  
 
 print("c", "f", 0, convert_temp("c", "f", 0), "should be 32.0")
 print("f", "c", 212, convert_temp("f", "c", 212), "should be 100.0")
